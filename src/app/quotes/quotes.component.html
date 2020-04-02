@@ -23,7 +23,7 @@
                 <p>
                     The quote was added on{{property.completeDate|date}} <!--added pipe-->
                 </p>
-                <app-author  [property]='property' (done)='deleteQuote($event,i)'></app-author> <!--where 'property' is the blueprint class-->
+                <app-author  [property]='property' (done)='deleteQuote($event,i)'(count)='perfomCount($event,i)'></app-author> <!--where 'property' is the blueprint class-->
                 <!--evnt has been captured and a function to bind the logic declared with two arg-->
                 <app-form (addQuote)="addNewQuote($event)"></app-form>
             </div>

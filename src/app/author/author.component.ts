@@ -9,13 +9,16 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 export class AuthorComponent implements OnInit {
   @Input () property:Properties;
   @Output () done = new EventEmitter<boolean>();
+  @Output () count = new EventEmitter<number>();
 
  
 
   quoteDelete(complete:boolean){
     this.done.emit(complete);//event emmitted captured on the parent//
   }
-
+  counting(increase:number){
+    this.count.emit(increase);
+  }
 
   constructor() { }
 
