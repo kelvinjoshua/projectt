@@ -39,7 +39,7 @@ export class QuotesComponent implements OnInit {
   }
   perfomCount(count,index){
     if(count){
-      this.property[index].upvote= this.property[index].upvote +=1
+      this.property[index].vote= this.property[index].vote +=1
       this.property[index].downvote= this.property[index].downvote +=1
     }
   }
