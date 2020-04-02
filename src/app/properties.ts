@@ -6,7 +6,7 @@ export class Properties {
     constructor(
         public message:string,
         public author:string,
-        public completeDate:Date,
+        public completeDate:Date, 
 
     ){
         this.showauthor=false;//initialised false so that the author isnt displayed//
