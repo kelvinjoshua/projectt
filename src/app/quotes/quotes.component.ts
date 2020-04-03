@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Properties } from '../properties';
-
+  
 @Component({
   selector: 'app-quotes',
   templateUrl: './quotes.component.html',
