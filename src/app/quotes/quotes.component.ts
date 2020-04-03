@@ -20,7 +20,7 @@ export class QuotesComponent implements OnInit {
     new Properties(`"The future belongs to those who prepare for it today."`,`Anonymous`,new Date(2020,4,1),0,0, ),
     new Properties(`"The most courageous act is still to think for yourself. Aloud."`,`~Coco Chanel`,new Date(2020,4,1),0,0, )
    //keyword new used to call the blueprint showing mandatory properties//
-  ];
+  ]; 
   addNewQuote(property){
     let propertylength= this.property.length;//get length of the property array and store it in a var//
     property.id = propertylength +1;
