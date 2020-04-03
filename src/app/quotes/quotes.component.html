@@ -20,6 +20,7 @@
                 
             <button (click)='toggleauthor(i)'>Author</button><!--function made to bind the logic of the eventlistener at the respective index-->
             <div *ngIf='property.showauthor'>
+                       {{property.author}}
                 <p>
                     The quote was added on{{property.completeDate|date}}
                     <br>
