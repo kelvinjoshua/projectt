@@ -4,7 +4,7 @@ import { Properties } from '../properties';
 @Component({
   selector: 'app-quotes',
   templateUrl: './quotes.component.html',
-  styleUrls: ['./quotes.component.css']     
+  styleUrls: ['./quotes.component.css']      
 }) 
 export class QuotesComponent implements OnInit {
   property:Properties[]= [
