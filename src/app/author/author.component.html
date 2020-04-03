@@ -1,7 +1,11 @@
 <p>
     The quote by Author  {{property.author}}
-    was added {{property.completeDate|dateCount}} ago
+    was added {{property.completeDate|date|dateCount}} ago
 </p>
 <button (click)='quoteDelete(true)'>Delete</button>
-<button type="submit" class="fa fa-thumbs-up">0</button><!--(click)='counting(0)-->
-<button type="submit"class="fa fa-thumbs-down">0</button><!--click)='counting(0)' --> 
+<button type="submit" class="fa fa-thumbs-up" (click)='counting(0)'>
+    {{property.vote}}
+</button>
+<button type="submit"class="fa fa-thumbs-down" (click)='depreciate(0)'>
+    {{property.downvote}}
+</button> 

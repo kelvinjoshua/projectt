@@ -8,7 +8,7 @@ import { Properties } from '../properties';
 })
 export class FormComponent implements OnInit {
 
-  newProperty = new Properties('message','author',new Date());//DECLARED NEW property and assigned it to our blueprint class and passed its attributes as arguments//
+  newProperty = new Properties('message','author',new Date(),'vote','downvote');//DECLARED NEW property and assigned it to our blueprint class and passed its attributes as arguments//
   @Output () addQuote = new EventEmitter<Properties>();
 
     submitQuote(){
