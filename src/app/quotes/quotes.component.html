@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <div class="container">
-    <h3><i>Quotes</i></h3>
+    <h3 align='center'><i>Quotes</i></h3>
     <br>
    
     <h4 align="center"><i class="fa fa-quote-left ">
@@ -13,15 +13,18 @@
         
         </i><i class="fa fa-quote-right "></i>
     </h4>
+
+    
         <div *ngFor='let property of property; let i=index' class="transform"><!--index var to  register index of the property item-->
-            
                 {{property.message}}
-            
-            
+                
             <button (click)='toggleauthor(i)'>Author</button><!--function made to bind the logic of the eventlistener at the respective index-->
             <div *ngIf='property.showauthor'>
                 <p>
-                    The quote was added on{{property.completeDate|date}} <!--added pipe-->
+                    The quote was added on{{property.completeDate|date}}
+                    <br>
+
+                     <!--added pipe-->
                 </p>
                 <app-author  [property]='property' (done)='deleteQuote($event,i)' (count)='perfomCount($event,i)'(unlike)='perfomUnlike($event,i)' >
                     

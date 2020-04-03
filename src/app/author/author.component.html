@@ -2,6 +2,7 @@
     The quote by Author  {{property.author}}
     was added {{property.completeDate|date|dateCount}} ago
 </p>
+<li class='vote'>*if you vote 10 times or more this will be highlighted as the quote with most votes*</li>
 <button (click)='quoteDelete(true)'>Delete</button>
 <button type="submit" class="fa fa-thumbs-up" (click)='counting(0)'>
     {{property.vote}}
@@ -9,3 +10,8 @@
 <button type="submit"class="fa fa-thumbs-down" (click)='depreciate(0)'>
     {{property.downvote}}
 </button> 
+
+<li class='color' *ngIf='property.vote >=10' appHighlight>
+    {{property.message}}  has the  most votes
+
+</li>

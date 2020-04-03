@@ -21,3 +21,4 @@ export class DateCountPipe implements PipeTransform {
     }
   } 
 }
+//create server js, ng build repo name in the dist, folder name with the html, npm r express on terminal to install,coping the dependencies cli and compiler, replace start at packet json with start dev, packages to be copied, build auto every time you push deploy to app, add typescript//
